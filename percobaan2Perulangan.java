@@ -1,30 +1,27 @@
-import java.util.Scanner;
-
 public class percobaan2Perulangan {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan NIM : ");
-        String nim = sc.nextLine();
+        int n = 11; 
 
-        int n = Integer.parseInt(nim.substring(nim.length()-2));
+        if (n < 10) {
+            n += 10;
+        }
 
-        if(n < 10) n += 10;
+        for (int i = 1; i <= n; i++) {
 
-        for(int i = 1; i <= n; i++) {
-
-            if(i == 10 || i == 15)
+            if (i == 10 || i == 15) {
                 continue;
+            }
 
-            if(i % 3 == 0)
+            if (i % 3 == 0) {
                 System.out.print("# ");
-            else if(i % 2 == 0)
+            } 
+            else if (i % 2 == 0) {
                 System.out.print(i + " ");
-            else
+            } 
+            else {
                 System.out.print("* ");
+            }
         }
     }
 }
-
-    
-
