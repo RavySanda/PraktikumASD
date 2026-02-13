@@ -51,7 +51,6 @@ public class Percobaan1Pemilihan {
         System.out.println("Nilai huruf : " + huruf);
         System.out.println("====================");
         System.out.println("====================");
-
         System.out.println(status);
     }
 }
