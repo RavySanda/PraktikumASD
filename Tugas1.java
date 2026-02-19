@@ -5,30 +5,37 @@ public class Tugas1 {
 
         Scanner sc = new Scanner(System.in);
 
-        String[] kode = {"A","B","D","E","F","G","H","L","N","T"};
+        char[] kode = {'A','B','D','E','F','G','H','L','N','T'};
 
-        String[] kota = {
-            "BANTEN",
-            "JAKARTA",
-            "BANDUNG",
-            "CIREBON",
-            "BOGOR",
-            "PEKALONGAN",
-            "SEMARANG",
-            "SURABAYA",
-            "MALANG",
-            "TEGAL"
+        char[][] kota = {
+            {'B','A','N','T','E','N'},
+            {'J','A','K','A','R','T','A'},
+            {'B','A','N','D','U','N','G'},
+            {'C','I','R','E','B','O','N'},
+            {'B','O','G','O','R'},
+            {'P','E','K','A','L','O','N','G','A','N'},
+            {'S','E','M','A','R','A','N','G'},
+            {'S','U','R','A','B','A','Y','A'},
+            {'M','A','L','A','N','G'},
+            {'T','E','G','A','L'}
         };
-        while (true) {  
+
+        while (true) { 
 
             System.out.print("\nMasukkan kode plat nomor: ");
-            String input = sc.next().toUpperCase();
+            char input = sc.next().toUpperCase().charAt(0);
 
             boolean ketemu = false;
 
             for (int i = 0; i < kode.length; i++) {
-                if (input.equals(kode[i])) {
-                    System.out.println("Nama kota : " + kota[i]);
+                if (input == kode[i]) {
+
+                    System.out.print("Nama kota : ");
+                    for (int j = 0; j < kota[i].length; j++) {
+                        System.out.print(kota[i][j]);
+                    }
+                    System.out.println();
+
                     ketemu = true;
                     break;
                 }
