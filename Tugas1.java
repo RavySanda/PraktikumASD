@@ -19,7 +19,6 @@ public class Tugas1 {
             "MALANG",
             "TEGAL"
         };
-
         while (true) {  
 
             System.out.print("\nMasukkan kode plat nomor: ");
