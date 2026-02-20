@@ -13,7 +13,6 @@ public class MahasiswaMain2 {
         mhs1.updateIpk(4.2);
         mhs1.tampilkanInformasi();
 
-
     }
     
 }
