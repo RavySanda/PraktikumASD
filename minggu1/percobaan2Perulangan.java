@@ -1,6 +1,5 @@
 public class percobaan2Perulangan {
     public static void main(String[] args) {
-
         int n = 11; 
 
         if (n < 10) {
