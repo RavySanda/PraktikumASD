@@ -11,7 +11,7 @@ void tampilkanInformasi () {
   System.out.println("Kelas : " + kelas);
 }
 void ubahKelas(String kelasBaru){
-    kelas = kelasBaru;
+      kelas = kelasBaru;
 }
 void updateIpk(double ipkBaru){
         if(ipkBaru >= 0.0 && ipkBaru <= 4.0){
