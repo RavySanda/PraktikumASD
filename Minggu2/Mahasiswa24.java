@@ -1,7 +1,4 @@
-
 public class Mahasiswa24 {
-
-    
 String nama;
 String nim;
 String kelas;
