@@ -13,6 +13,7 @@ void tampilkanInformasi () {
 void ubahKelas(String kelasBaru){
       kelas = kelasBaru;
 }
+
 void updateIpk(double ipkBaru){
         if(ipkBaru >= 0.0 && ipkBaru <= 4.0){
             ipk = ipkBaru;
@@ -20,6 +21,7 @@ void updateIpk(double ipkBaru){
             System.out.println("IPK tidak valid. Harus anatara 0.0 dan 4.0");       
         }
 }
+
 String nilaiKinerja(double ipk) {
         if (ipk >= 3.5) {
             return "Sangat Baik";
