@@ -14,7 +14,6 @@ public Mahasiswa24(String nm,String nim,double ipk,String kls){
   kelas = kls;
 }
 
-
 void tampilkanInformasi () {
   System.out.println("Nama : " + nama);
   System.out.println("NIM : " + nim);
