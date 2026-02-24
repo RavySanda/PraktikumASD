@@ -1,6 +1,7 @@
 public class DosenMain24 {
     public static void main(String[] args) {
 
+        
         Dosen24 d1 = new Dosen24();
         d1.idDosen = "D24";
         d1.nama = "Pak Andi";

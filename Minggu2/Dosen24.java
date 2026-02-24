@@ -18,6 +18,7 @@ public class Dosen24 {
         this.statusAktif = statusAktif;
         this.tahunBergabung = tahunBergabung;
         this.bidangKeahlian = bidangKeahlian;
+        
     }
 
     void tampilInformasi() {

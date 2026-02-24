@@ -7,6 +7,7 @@ public class MataKuliahMain24 {
         mk1.sks = 3;
         mk1.jumlahJam = 6;
 
+        
         MataKuliah24 mk2 = new MataKuliah24(
                 "BD24",
                 "Basis Data",
