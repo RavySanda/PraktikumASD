@@ -10,7 +10,6 @@ public class Dosenn24 {
         this.jenisKelamin = jenisKelamin;
         this.usia = usia;
     }
-
     public void tampil() {
         System.out.println("Kode          : " + kode);
         System.out.println("Nama          : " + nama);

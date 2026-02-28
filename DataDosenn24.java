@@ -1,13 +1,13 @@
 public class DataDosenn24 {
 
-    // a. Menampilkan semua dosen
+    //  Menampilkan semua dosen
     public void dataSemuaDosen(Dosenn24[] arrayOfDosen) {
         for (Dosenn24 d : arrayOfDosen) {
             d.tampil();
         }
     }
 
-    // b. Jumlah dosen per jenis kelamin
+    //  Jumlah dosen per jenis kelamin
     public void jumlahDosenPerJenisKelamin(Dosenn24[] arrayOfDosen) {
         int pria = 0;
         int wanita = 0;
@@ -25,7 +25,7 @@ public class DataDosenn24 {
         System.out.println("-------------------------------------");
     }
 
-    // c. Rata-rata usia per jenis kelamin
+    //  Rata-rata usia per jenis kelamin
     public void rerataUsiaDosenPerJenisKelamin(Dosenn24[] arrayOfDosen) {
         int totalPria = 0, totalWanita = 0;
         int jmlPria = 0, jmlWanita = 0;
@@ -48,7 +48,7 @@ public class DataDosenn24 {
         System.out.println("-------------------------------------");
     }
 
-    // d. Dosen paling tua
+    //  Dosen paling tua
     public void infoDosenPalingTua(Dosenn24[] arrayOfDosen) {
         Dosenn24 tertua = arrayOfDosen[0];
 
@@ -62,7 +62,7 @@ public class DataDosenn24 {
         tertua.tampil();
     }
 
-    // e. Dosen paling muda
+    //  Dosen paling muda
     public void infoDosenPalingMuda(Dosenn24[] arrayOfDosen) {
         Dosenn24 termuda = arrayOfDosen[0];
 
