@@ -1,5 +1,4 @@
 public class DataDosenn24 {
-
     //  Menampilkan semua dosen
     public void dataSemuaDosen(Dosenn24[] arrayOfDosen) {
         for (Dosenn24 d : arrayOfDosen) {

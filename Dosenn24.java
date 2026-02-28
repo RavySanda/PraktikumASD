@@ -1,4 +1,5 @@
 public class Dosenn24 {
+
     
     String kode;
     String nama;
