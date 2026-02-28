@@ -5,7 +5,6 @@ public class DosenDemo24 {
         System.out.print("Masukkan jumlah dosen: ");
         int jumlah = sc.nextInt();
         sc.nextLine();
-
         Dosenn24[] arrayOfDosen = new Dosenn24[jumlah];
 
         for (int i = 0; i < jumlah; i++) {

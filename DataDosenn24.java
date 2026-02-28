@@ -22,7 +22,6 @@ public class DataDosenn24 {
         System.out.println("Jumlah Dosen Wanita : " + wanita);
         System.out.println("-------------------------------------");
     }
-
     //  Rata-rata usia per jenis kelamin
     public void rerataUsiaDosenPerJenisKelamin(Dosenn24[] arrayOfDosen) {
         int totalPria = 0, totalWanita = 0;
