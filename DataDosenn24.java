@@ -6,7 +6,6 @@ public class DataDosenn24 {
             d.tampil();
         }
     }
-
     //  Jumlah dosen per jenis kelamin
     public void jumlahDosenPerJenisKelamin(Dosenn24[] arrayOfDosen) {
         int pria = 0;
