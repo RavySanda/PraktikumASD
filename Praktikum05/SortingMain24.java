@@ -28,4 +28,5 @@ public class SortingMain24 {
     dataurut3.tampil();
 
 }
+
 }
