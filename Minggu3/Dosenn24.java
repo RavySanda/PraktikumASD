@@ -16,5 +16,6 @@ public class Dosenn24 {
         System.out.println("Jenis Kelamin : " + jenisKelamin);
         System.out.println("Usia          : " + usia);
         System.out.println("-------------------------------------");
+
     }
 }

@@ -26,7 +26,5 @@ public class Matakuliah24 {
         System.out.println("Jumlah Jam : " + jumlahJam);
         System.out.println("---------------------------");
     }
-
-
     
 }

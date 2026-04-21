@@ -68,7 +68,6 @@ public class DataDosenn24 {
                 termuda = d;
             }
         }
-
         System.out.println("Dosen Paling Muda:");
         termuda.tampil();
     }

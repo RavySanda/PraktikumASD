@@ -34,7 +34,6 @@ public class DosenDemo {
             d.tampil();
             no++;
         }
-
         sc.close();
     }
 }

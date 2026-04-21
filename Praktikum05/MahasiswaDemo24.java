@@ -4,7 +4,6 @@ public class MahasiswaDemo24 {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
         MahasiswaBerprestasi24 list = new MahasiswaBerprestasi24();
-
         System.out.print("Masukkan jumlah mahasiswa: ");
         int jml = sc.nextInt();
         sc.nextLine();

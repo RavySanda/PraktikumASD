@@ -44,7 +44,7 @@ public class DosenDemo24 {
 
         System.out.println("===== DOSEN PALING MUDA =====");
         data.infoDosenPalingMuda(arrayOfDosen);
-
+        
         sc.close();
     }
 }

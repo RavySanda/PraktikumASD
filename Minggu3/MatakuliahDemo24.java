@@ -30,5 +30,6 @@ public class MatakuliahDemo24 {
             System.out.println("Data Matakuliah ke-" + (i + 1));
             arrayOfMatakuliah24[i].cetakInfo();
         }
+        
     }
 }

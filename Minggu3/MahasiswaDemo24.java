@@ -5,6 +5,7 @@ public class MahasiswaDemo24 {
         Mahasiswaa24[] arrayOfMahasiswa = new Mahasiswaa24[3];
         String dummy;
 
+        
         for (int i = 0; i < 3; i++) {
             arrayOfMahasiswa[i] = new Mahasiswaa24();
 

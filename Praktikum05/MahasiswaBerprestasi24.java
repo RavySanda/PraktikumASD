@@ -56,5 +56,4 @@ public class MahasiswaBerprestasi24 {
         listMhs[j] = temp;
     }
 }
-
 }
