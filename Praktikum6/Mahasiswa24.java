@@ -14,7 +14,6 @@ public class Mahasiswa24 {
         kelas = kls;
         ipk = ip;
     }
-
     void tampilInformasi() {
         System.out.println("NIM   : " + nim);
         System.out.println("Nama  : " + nama);

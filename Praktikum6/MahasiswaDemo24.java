@@ -26,5 +26,6 @@ public class MahasiswaDemo24 {
         int posBin = list.findBinarySearch(cari, 0, list.listMhs.length - 1);
         list.tampilPosisi(cari, posBin);
         list.tampilDataSearch(cari, posBin);
+  
     }
 }

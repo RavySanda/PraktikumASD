@@ -3,7 +3,6 @@ package Praktikum6;
 public class MahasiswaBerprestasi24 {
     Mahasiswa24[] listMhs = new Mahasiswa24[5];
     int idx;
-
     void tambah(Mahasiswa24 m) {
         if (idx < listMhs.length) {
             listMhs[idx] = m;
