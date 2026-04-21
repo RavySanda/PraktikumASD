@@ -40,7 +40,6 @@ public class RoyalGarden {
 
         static String cekStatus(int pendapatan) {
         //menentukan status cabang berdasarkan pendapatan
-
         if (pendapatan > 1500000)
             return "Sangat Baik";
         else

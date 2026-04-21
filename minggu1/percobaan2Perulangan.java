@@ -3,7 +3,6 @@ public class percobaan2Perulangan {
         
         //menampilkan deretan bilangan dari angka 1 sampai n (11)
         int n = 11; 
-
         if (n < 10) {
             n += 10; //bila n<10 maka tambahkan 10 (n+=10)
         }

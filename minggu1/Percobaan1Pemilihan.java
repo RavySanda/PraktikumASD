@@ -4,7 +4,6 @@ public class Percobaan1Pemilihan {
         Scanner sc = new Scanner(System.in);
         System.out.println("PROSES MENGHITUNG NILAI AKHIR");
         System.out.println("====================");
-
         System.out.print("nilai tugas: ");
         double tugas = sc.nextDouble();
 

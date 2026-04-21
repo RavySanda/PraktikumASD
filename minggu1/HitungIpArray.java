@@ -34,7 +34,7 @@ public class HitungIpArray {
             bobot[i] = konversiBobot(nilaiHuruf[i]);//Nilai huruf kemudian diubah menjadi bobot nilai menggunakan method konversiBobot().
         }
 
-        // Output tabel
+
         System.out.println("\n======================================");
         System.out.println("Hasil Konversi Nilai");
         System.out.println("======================================");

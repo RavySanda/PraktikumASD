@@ -45,8 +45,7 @@ public class Tugas2{
 
         } while (pilihan != 4);
     }
-
-    static void inputJadwal(String[][] jadwal, int n) {//mengisi data jadwal kuliah.
+        static void inputJadwal(String[][] jadwal, int n) {//mengisi data jadwal kuliah.
         for (int i = 0; i < n; i++) {
             System.out.println("\nData Jadwal ke-" + (i + 1));
             System.out.print("Nama Mata Kuliah : ");
