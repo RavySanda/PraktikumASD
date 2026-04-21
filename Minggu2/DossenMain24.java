@@ -1,15 +1,16 @@
-public class DosenMain24 {
+public class DossenMain24 {
     public static void main(String[] args) {
 
-        
-        Dosen24 d1 = new Dosen24();
-        d1.idDosen = "D24";
+        // Objek dosen 1 menggunakan konstruktor default
+        Dossen24 d1 = new Dossen24();
+        d1.idDossen = "D24";
         d1.nama = "Pak Andi";
-        d1.statusAktif = true;
+        d1.ubahStatusAktif(true);   // dosen menjadi aktif
         d1.tahunBergabung = 2018;
         d1.bidangKeahlian = "Pemrograman";
 
-        Dosen24 d2 = new Dosen24(
+        // Objek dosen 2 menggunakan konstruktor berparameter
+        Dossen24 d2 = new Dossen24(
                 "D25",
                 "Bu Sinta",
                 true,
@@ -17,11 +18,14 @@ public class DosenMain24 {
                 "Basis Data"
         );
 
+        // Menampilkan data dosen 1
         System.out.println("=== Dosen 1 ===");
         d1.tampilInformasi();
         System.out.println("Masa Kerja: " + d1.hitungMasaKerja(2025) + " tahun");
 
+        // Menampilkan data dosen 2
         System.out.println("\n=== Dosen 2 ===");
         d2.tampilInformasi();
+        System.out.println("Masa Kerja: " + d2.hitungMasaKerja(2025) + " tahun");
     }
 }

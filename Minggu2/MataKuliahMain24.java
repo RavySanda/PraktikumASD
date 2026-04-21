@@ -2,7 +2,7 @@ public class MataKuliahMain24 {
     public static void main(String[] args) {
 
         MataKuliah24 mk1 = new MataKuliah24();
-        mk1.kodeMK = "ASD24";
+        mk1.kodematkul = "ASD24";
         mk1.nama = "Algoritma dan Struktur Data";
         mk1.sks = 3;
         mk1.jumlahJam = 6;
@@ -24,4 +24,8 @@ public class MataKuliahMain24 {
         System.out.println("\n=== Mata Kuliah 2 ===");
         mk2.tampilInformasi();
     }
-}
+}uat program menyimpan data produk
+
+nama    harga  stok24  
+beras   75000   23
+gula

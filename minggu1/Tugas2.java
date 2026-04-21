@@ -1,15 +1,19 @@
 import java.util.Scanner;
-
+//Baris menyatakan jadwal ke-i
+//Kolom menyatakan informasi jadwal: Nama Mata Kuliah, Ruang, Hari Kuliah, , Jam
+//-Kuliah
 public class Tugas2{
     static Scanner sc = new Scanner(System.in);
+    //scanner dibuat static supaya bisa dipakai di semua method
     public static void main(String[] args) {
 
         System.out.print("Masukkan jumlah jadwal kuliah: ");
-        int n = sc.nextInt();
+        int n = sc.nextInt();//menyimpan jumlah data jadwal.
         sc.nextLine();
         String[][] jadwal = new String[n][4];
+        //array 2 dimensi untuk menyimpan data jadwal.
 
-        inputJadwal(jadwal, n);
+        inputJadwal(jadwal, n);//mengisi data jadwal kuliah ke dalam array.
 
         int pilihan;
         do {
@@ -22,7 +26,7 @@ public class Tugas2{
             pilihan = sc.nextInt();
             sc.nextLine();
 
-            switch (pilihan) {
+            switch (pilihan) {//menjalankan fitur sesuai pilihan menu.
                 case 1:
                     tampilSemua(jadwal, n);
                     break;
@@ -42,7 +46,7 @@ public class Tugas2{
         } while (pilihan != 4);
     }
 
-    static void inputJadwal(String[][] jadwal, int n) {
+    static void inputJadwal(String[][] jadwal, int n) {//mengisi data jadwal kuliah.
         for (int i = 0; i < n; i++) {
             System.out.println("\nData Jadwal ke-" + (i + 1));
             System.out.print("Nama Mata Kuliah : ");
@@ -56,7 +60,7 @@ public class Tugas2{
         }
     }
 
-    static void tampilSemua(String[][] jadwal, int n) {
+    static void tampilSemua(String[][] jadwal, int n) {//menampilkan seluruh jadwal kuliah.
         System.out.println("\n=========== DAFTAR JADWAL =============");
         System.out.printf("%-25s %-20s %-10s %-15s\n",
                 "Mata Kuliah", "Ruang", "Hari", "Jam");
@@ -70,7 +74,7 @@ public class Tugas2{
         }
     }
 
-    static void cariHari(String[][] jadwal, int n) {
+    static void cariHari(String[][] jadwal, int n) {//memasukkan hari yang ingin dicari.
         System.out.print("Masukkan hari yang dicari: ");
         String cari = sc.nextLine();
 
@@ -88,13 +92,13 @@ public class Tugas2{
         if (!ditemukan) {
             System.out.println("Tidak ada jadwal pada hari tersebut.");
         }
-    }
+    }   
 
-    static void cariMatkul(String[][] jadwal, int n) {
+        static void cariMatkul(String[][] jadwal, int n) {//meminta nama mata kuliah.
         System.out.print("Masukkan nama mata kuliah: ");
         String cari = sc.nextLine();
 
-        boolean ditemukan = false;
+        boolean ditemukan = false;//mengecek apakah data ditemukan atau tidak.
 
         for (int i = 0; i < n; i++) {
             if (jadwal[i][0].equalsIgnoreCase(cari)) {

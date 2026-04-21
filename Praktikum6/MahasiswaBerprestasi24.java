@@ -12,7 +12,6 @@ public class MahasiswaBerprestasi24 {
             System.out.println("Data sudah penuh!");
         }
     }
-
     void tampil() {
         for (Mahasiswa24 m : listMhs) {
             m.tampilInformasi();

@@ -2,7 +2,6 @@ package Praktikum6;
 
 public class MahasiswaDemo24 {
     public static void main(String[] args) {
-
         MahasiswaBerprestasi24 list = new MahasiswaBerprestasi24();
 
         list.tambah(new Mahasiswa24("001", "Andi", "TI-1A", 3.2));

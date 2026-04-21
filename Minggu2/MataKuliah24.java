@@ -1,25 +1,25 @@
 public class MataKuliah24 {
 
-    
-    String kodeMK;
+    String kodematkul;
     String nama;
     int sks;
     int jumlahJam;
+    //menyimpan data mata kuliah,
 
     // Konstruktor Default
     public MataKuliah24() {
     }
 
     // Konstruktor Berparameter
-    public MataKuliah24(String kodeMK, String nama, int sks, int jumlahJam) {
-        this.kodeMK = kodeMK;
+    public MataKuliah24(String kodematkul, String nama, int sks, int jumlahJam) {
+        this.kodematkul = kodematkul;
         this.nama = nama;
         this.sks = sks;
         this.jumlahJam = jumlahJam;
     }
 
     void tampilInformasi() {
-        System.out.println("Kode MK   : " + kodeMK);
+        System.out.println("Kode MK   : " + kodematkul);
         System.out.println("Nama MK   : " + nama);
         System.out.println("SKS       : " + sks);
         System.out.println("Jumlah Jam: " + jumlahJam);

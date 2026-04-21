@@ -16,21 +16,22 @@ public class HitungIpArray {
             "Keselamatan dan Kesehatan Kerja"
         };
 
-        double[] nilaiAngka = new double[mk.length];
-        String[] nilaiHuruf = new String[mk.length];
-        double[] bobot = new double[mk.length];
+        double[] nilaiAngka = new double[mk.length];//Menyimpan nilai angka mahasiswa
+        String[] nilaiHuruf = new String[mk.length];//Menyimpan hasil konversi nilai huruf
+        double[] bobot = new double[mk.length];//Menyimpan bobot nilai untuk menghitung IP
+        //mk.length artinya jumlah array mengikuti jumlah mata kuliah
 
         System.out.println("======================================");
         System.out.println("Program Menghitung IP Semester");
         System.out.println("======================================");
 
         // Input nilai
-        for (int i = 0; i < mk.length; i++) {
-            System.out.print("Masukkan Nilai Angka untuk MK " + mk[i] + " : ");
+        for (int i = 0; i < mk.length; i++) {//Mengulang sebanyak jumlah mata kuliah
+            System.out.print("Masukkan Nilai Angka untuk MK " + mk[i] + " : ");//meminta pengguna memasukkan nilai
             nilaiAngka[i] = sc.nextDouble();
 
-            nilaiHuruf[i] = konversiHuruf(nilaiAngka[i]);
-            bobot[i] = konversiBobot(nilaiHuruf[i]);
+            nilaiHuruf[i] = konversiHuruf(nilaiAngka[i]);//Nilai angka  diubah menjadi nilai huruf dengan method konversiHuruf().
+            bobot[i] = konversiBobot(nilaiHuruf[i]);//Nilai huruf kemudian diubah menjadi bobot nilai menggunakan method konversiBobot().
         }
 
         // Output tabel
@@ -43,17 +44,19 @@ public class HitungIpArray {
 
         double totalBobot = 0;
 
-        for (int i = 0; i < mk.length; i++) {
+        for (int i = 0; i < mk.length; i++) {//Program mengulang untuk menampilkan data setiap mk
             System.out.printf("%-40s %-12.2f %-12s %-12.2f\n",
                     mk[i], nilaiAngka[i], nilaiHuruf[i], bobot[i]);
+                    //Menampilkan data dalam bentuk tabel yang rapi.
 
-            totalBobot += bobot[i];
+            totalBobot += bobot[i];//menjumlahkan seluruh bobot nilai
         }
 
-        double ip = totalBobot / mk.length;
+        double ip = totalBobot / mk.length;//rumus
 
         System.out.println("======================================");
         System.out.printf("IP : %.2f\n", ip);
+        //nilai IP semester mahasiswa dengan 2 angka di belakang koma.
     }
 
     // Konversi nilai angka → huruf
