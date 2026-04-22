@@ -26,6 +26,6 @@ public class SortingMain24 {
     dataurut3.selectionSort();
     System.out.println("Data sudah diururtkan  dengan INSERTION SORT (ASC)");
     dataurut3.tampil();
-
 }
+
 }

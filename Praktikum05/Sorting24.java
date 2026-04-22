@@ -53,7 +53,8 @@ void selectionSort() {
         }
         data[j + 1] =temp;
     }
+    
   }
-  
+
 }
 
