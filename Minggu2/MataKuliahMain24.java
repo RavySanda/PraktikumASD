@@ -24,8 +24,4 @@ public class MataKuliahMain24 {
         System.out.println("\n=== Mata Kuliah 2 ===");
         mk2.tampilInformasi();
     }
-}uat program menyimpan data produk
-
-nama    harga  stok24  
-beras   75000   23
-gula
+}

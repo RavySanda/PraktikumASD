@@ -32,7 +32,6 @@ public class Dossen24 {
     void ubahStatusAktif(boolean status) {
     statusAktif = status;
     }
-
     int hitungMasaKerja(int tahunSekarang) {
         return tahunSekarang - tahunBergabung;
     }

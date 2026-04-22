@@ -7,6 +7,7 @@ double ipk;
 public Mahasiswa24() {
 }
 
+
 public Mahasiswa24(String nm,String nim,double ipk,String kls){
   nama = nm;
   this.nim = nim;

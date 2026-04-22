@@ -10,6 +10,7 @@ public class MataKuliah24 {
     public MataKuliah24() {
     }
 
+    
     // Konstruktor Berparameter
     public MataKuliah24(String kodematkul, String nama, int sks, int jumlahJam) {
         this.kodematkul = kodematkul;

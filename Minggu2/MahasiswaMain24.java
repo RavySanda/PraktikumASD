@@ -8,6 +8,7 @@ public class MahasiswaMain24 {
         mhs1.kelas = "TI 1D";
         mhs1.ipk = 3.55;
 
+        
         mhs1.tampilkanInformasi();
         mhs1.ubahKelas("TI 2C");
         mhs1.updateIpk(3.60);

@@ -1,6 +1,5 @@
 public class DossenMain24 {
     public static void main(String[] args) {
-
         // Objek dosen 1 menggunakan konstruktor default
         Dossen24 d1 = new Dossen24();
         d1.idDossen = "D24";
