@@ -48,6 +48,7 @@ public class StackTugasMahasiswa {
             return null;
         }
     }
+
     public void print() {
         if (!isEmpty()) {
             for (int i = top; i >= 0; i--) {
@@ -57,6 +58,7 @@ public class StackTugasMahasiswa {
             System.out.println("Tidak ada tugas di dalam tumpukan.");
         }
     }
+
     public String konversiDesimalKeBiner(int nilai) {
         StackKonversi stackKonv = new StackKonversi();
         
@@ -74,6 +76,22 @@ public class StackTugasMahasiswa {
         while (!stackKonv.isEmpty()) {
             biner += stackKonv.pop();
         }
+        
         return biner;
+    }
+
+    // MENJAWAB PERTANYAAN NO 4: Melihat tugas terbawah (pertama dikumpulkan)
+    public Mahasiswa peekBottom() {
+        if (!isEmpty()) {
+            return stack[0]; 
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas.");
+            return null;
+        }
+    }
+
+    // MENJAWAB PERTANYAAN NO 5: Menghitung jumlah tugas saat ini
+    public int getJumlahTugas() {
+        return top + 1;
     }
 }

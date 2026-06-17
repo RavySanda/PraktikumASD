@@ -12,9 +12,12 @@ public class MahasiswaDemo {
         do {
             System.out.println("\nMenu:");
             System.out.println("1. Mengumpulkan Tugas");
-            System.out.println("2. Menilai Tugas");
+            System.out.println("2. Menilai Tugas (Konversi Biner)");
             System.out.println("3. Melihat Tugas Teratas");
-            System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("4. Melihat Daftar Semua Tugas");
+            System.out.println("5. Melihat Tugas Terbawah (Pertama Kumpul)");
+            System.out.println("6. Menghitung Jumlah Tugas Saat Ini");
+            System.out.println("7. Keluar");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -44,7 +47,6 @@ public class MahasiswaDemo {
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
                         
-                        // Fitur Percobaan 2: Konversi hasil nilai ke biner
                         String biner = stack.konversiDesimalKeBiner(nilai);
                         System.out.println("Nilai Biner Tugas: " + biner);
                     }
@@ -63,11 +65,26 @@ public class MahasiswaDemo {
                     stack.print();
                     break;
 
+                case 5:
+                    Mahasiswa bawah = stack.peekBottom();
+                    if (bawah != null) {
+                        System.out.println("Tugas pertama kali dikumpulkan oleh: " + bawah.nama);
+                    }
+                    break;
+
+                case 6:
+                    System.out.println("Jumlah tugas di dalam tumpukan saat ini: " + stack.getJumlahTugas() + " berkas.");
+                    break;
+
+                case 7:
+                    System.out.println("Keluar dari program.");
+                    break;
+
                 default:
                     System.out.println("Pilihan tidak valid.");
                     break;
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
         
         scan.close();
     }
