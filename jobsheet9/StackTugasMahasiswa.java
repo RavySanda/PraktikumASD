@@ -5,7 +5,7 @@ public class StackTugasMahasiswa {
     public int size;
     public int top;
 
-    // Konstruktor untuk inisialisasi stack
+    
     public StackTugasMahasiswa(int size) {
         this.size = size;
         this.stack = new Mahasiswa[size];
