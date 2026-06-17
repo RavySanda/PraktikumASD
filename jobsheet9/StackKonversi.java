@@ -6,7 +6,7 @@ public class StackKonversi {
     public int top;
 
     public StackKonversi() {
-        this.size = 32; // Asumsi menggunakan representasi 32-bit
+        this.size = 32; 
         this.tumpukanBiner = new int[size];
         this.top = -1;
     }

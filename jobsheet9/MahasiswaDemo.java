@@ -4,10 +4,8 @@ import java.util.Scanner;
 
 public class MahasiswaDemo {
     public static void main(String[] args) {
-        // Menginstansiasi objek stack dengan kapasitas 5 tugas
         StackTugasMahasiswa stack = new StackTugasMahasiswa(5);
         
-        // PERBAIKAN: Menggunakan System.in secara langsung
         Scanner scan = new Scanner(System.in); 
         int pilih;
 
@@ -19,7 +17,7 @@ public class MahasiswaDemo {
             System.out.println("4. Melihat Daftar Tugas");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
-            scan.nextLine(); // Membersihkan buffer scanner
+            scan.nextLine();
 
             switch (pilih) {
                 case 1:

@@ -48,8 +48,6 @@ public class StackTugasMahasiswa {
             return null;
         }
     }
-
-    // Perbaikan pada method print agar mencetak dari top ke bawah (LIFO)
     public void print() {
         if (!isEmpty()) {
             for (int i = top; i >= 0; i--) {
@@ -59,7 +57,6 @@ public class StackTugasMahasiswa {
             System.out.println("Tidak ada tugas di dalam tumpukan.");
         }
     }
-    // Tambahkan method ini di dalam class StackTugasMahasiswa
     public String konversiDesimalKeBiner(int nilai) {
         StackKonversi stackKonv = new StackKonversi();
         
