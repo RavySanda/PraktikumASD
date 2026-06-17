@@ -19,7 +19,7 @@ public class LayananAkademikSIAKAD {
             System.out.println("3. Lihat Antrian Terdepan");
             System.out.println("4. Cetak Semua Antrian");
             System.out.println("5. Cek Kuota Penuh/Kosong");
-            System.out.println("6. Cek Antrian Paling Belakang"); // Menu Tambahan Pertanyaan 2.2.3
+            System.out.println("6. Cek Antrian Paling Belakang"); 
             System.out.println("7. Selesai");
             System.out.print("Pilih opsi (1-7): ");
             pilih = scan.nextInt();

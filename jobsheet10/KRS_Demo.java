@@ -8,6 +8,7 @@ public class KRS_Demo {
         AntrianKRS antrianKrs = new AntrianKRS();
         int opsi;
 
+        
         do {
             System.out.println("\n======= SISTEM ANTRIAN KRS MAHASISWA =======");
             System.out.println("1. Tambah Antrian Mahasiswa (Masuk)");

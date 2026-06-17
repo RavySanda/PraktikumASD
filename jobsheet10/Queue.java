@@ -85,4 +85,5 @@ public class Queue {
             System.out.println("Queue sudah kosong.");
         }
     }
+    
 }

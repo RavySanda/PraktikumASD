@@ -7,6 +7,8 @@ public class AntrianLayanan {
     public int size;
     public int max;
 
+
+    
     public AntrianLayanan(int n) {
         max = n;
         antrian = new Mahasiswa[max];

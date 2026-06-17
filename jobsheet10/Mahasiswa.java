@@ -12,4 +12,5 @@ public class Mahasiswa {
         this.kelas = kelas;
         this.absen = absen;
     }
+    
 }

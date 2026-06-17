@@ -6,10 +6,10 @@ public class AntrianKRS {
     public int rear;
     public int size;
     public int max;
-    public int totalSudahKRS; // Melacak jumlah total mhs yang sudah sukses KRS
+    public int totalSudahKRS;
 
     public AntrianKRS() {
-        max = 10; // Sesuai instruksi soal: Jumlah antrian maximal 10
+        max = 10; 
         dataKRS = new Mahasiswa[max];
         size = 0;
         front = 0;
@@ -47,7 +47,7 @@ public class AntrianKRS {
         }
     }
 
-    // Instruksi Soal: Setiap 1x panggilan terdiri dari 2 mahasiswa (urutan 1 dan 2)
+
     public void panggilProsesKRS() {
         if (isEmpty()) {
             System.out.println("Tidak ada mahasiswa di dalam antrian KRS!");
@@ -67,7 +67,7 @@ public class AntrianKRS {
         totalSudahKRS++;
         System.out.println("1. Sukses Verifikasi KRS -> Nama: " + mhs1.nama + " (" + mhs1.nim + ")");
 
-        // Panggil mahasiswa kedua jika antrian masih tersedia
+       
         if (!isEmpty()) {
             Mahasiswa mhs2 = dataKRS[front];
             size--;
