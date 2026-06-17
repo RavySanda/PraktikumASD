@@ -80,7 +80,7 @@ public class StackTugasMahasiswa {
         return biner;
     }
 
-    // MENJAWAB PERTANYAAN NO 4: Melihat tugas terbawah (pertama dikumpulkan)
+   
     public Mahasiswa peekBottom() {
         if (!isEmpty()) {
             return stack[0]; 
@@ -90,7 +90,7 @@ public class StackTugasMahasiswa {
         }
     }
 
-    // MENJAWAB PERTANYAAN NO 5: Menghitung jumlah tugas saat ini
+    
     public int getJumlahTugas() {
         return top + 1;
     }

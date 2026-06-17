@@ -1,4 +1,4 @@
-package jobsheet9; // Sesuai dengan nama folder yang diinstruksikan
+package jobsheet9; 
 
 public class Mahasiswa {
     public String nim;
